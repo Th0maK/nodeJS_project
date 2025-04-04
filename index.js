@@ -5,13 +5,14 @@ const main = async () => {
     const path = "./data/dictionnaire.txt";
     try {
         const dico = await fs.readFile(path, 'utf8');
-        console.log(dico);
+        console.log("Hello World ! \n Voici ton dico :", dico);
     } catch (err) {
         console.error(err);
     }
-    //console.log("Hello World ! \n Voici ton dico :", dico);
+
 
     const toDefaultNumber = R.pipe(R.prop("doa"), R.length);
+
 }
 
 await main();
