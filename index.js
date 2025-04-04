@@ -1,10 +1,10 @@
 import * as R from "ramda";
-import fs from "node:fs";
+import fs from "fs-extra";
 
-const main = () => {
+const main = async () => {
     const path = "./data/dictionnaire.txt";
     try {
-        const dico = fs.readFileSync(path, 'utf8');
+        const dico = await fs.readFile(path, 'utf8');
         console.log(dico);
     } catch (err) {
         console.error(err);
@@ -14,4 +14,4 @@ const main = () => {
     const toDefaultNumber = R.pipe(R.prop("doa"), R.length);
 }
 
-main();
+await main();
