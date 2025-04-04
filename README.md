@@ -1,5 +1,7 @@
 # nodeJS_project
 
+Auteurs : Thomas Kusnierek & Benjamin Szurek
+
 ## Déterminer la prochaine lettre
 
 On fait un projet en node js pour calculer la probabilité de la prochaine lettre d'un mot :
