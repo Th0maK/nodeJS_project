@@ -1,6 +1,1 @@
-le
-la
-les
-des
-particule
-chimique
+// Endroit avec un dictionnaire de mot
