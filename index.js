@@ -1,9 +1,13 @@
 import fs from "fs-extra";
 import { motPlusProbable, probasLettreSuivante } from "./lib/fonction.js";
 
-const prefixe = "mont";
+// PARTIE MODIFIABLE POUR CHANGER LES VALEURS
+
+const prefixe = "pon";
 const topLettre = 5;
 const topMot = 1;
+
+// FIN PARTIE MODIFABLE
 
 const main = async () => {
   const path = "./data/dictionnaire.txt";
